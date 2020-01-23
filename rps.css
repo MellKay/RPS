@@ -1,10 +1,13 @@
 body {
-    background-color: rgb(63, 60, 60);
+    /* background-image: radial-gradient(rgb(156, 151, 151),rgb(63, 60, 60)); */
+    background-color:rgb(63, 60, 60) ;
+    height: 100vh;
     color:white; 
     font-family: Arial, Helvetica, sans-serif;
     margin: 0 auto;
     padding: 0;
     text-align: center;
+    /* background: url("skull.png"); */
 }
 
 button {
@@ -55,4 +58,62 @@ background-color: rgba(187, 35, 35, 0.5);
 #heading2 {
     width: auto; 
     height: 50px;
+}
+
+.lose-image {
+    animation: skull 1s infinite;
+}
+
+@keyframes skull {
+    0% {
+        background-image: none;
+        background-position: center;
+    }
+    38% {
+        background-image: none;
+        background-position: center;
+    }
+    40% {
+        background-image: url("skull.png");
+        background-repeat: no-repeat;
+        background-size: 80vw 100vh;
+        background-position: center;
+    }
+    42% {
+        background-image: none;
+        background-position: center;
+    }
+    65% {
+        background-image: none;
+        background-position: center;
+    }
+    67% {
+        background-image: url("skull.png");
+        background-repeat: no-repeat;
+        background-size: 80vw 100vh;
+        background-position: center;
+    }
+    69% {
+        background-image: none;
+        background-position: center;
+    }
+    82% {
+        background-image: none;
+        background-position: center;
+    }
+    84% {
+        background-image: url("skull.png");
+        background-repeat: no-repeat;
+        background-size: 80vw 100vh;
+        background-position: center;
+    }
+    85% {
+        background-image: none;
+        background-position: center;
+    }
+    100%{
+        background-image: none;
+        background-position: center;
+    }
+    
 }

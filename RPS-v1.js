@@ -115,6 +115,8 @@ function playGame(){
             printWinningScores("Player wins!", "player-wins");
         } else if(cpuScore > playerScore) {
             printWinningScores("Computer wins!", "computer-wins");
+            document.getElementsByTagName("body")[0].classList.add("lose-image"); 
+
         } else {
             printWinningScores("It's a draw!", "draw");
         }
