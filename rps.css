@@ -1,0 +1,58 @@
+body {
+    background-color: rgb(63, 60, 60);
+    color:white; 
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+}
+
+button {
+    border: none;
+    border-radius: 0;
+    width: 150px;
+    height: 50px;
+    margin: 0;
+    padding: 0;
+}
+
+#scoreboard {
+    width: auto; 
+    height: 50px;
+}
+
+#rockBtn {
+background-color: rgb(109, 70, 70);
+}
+#paperBtn {
+background-color: rgb(255, 255, 255);
+}
+#scissorsBtn {
+background-color: rgb(187, 35, 35);
+}
+#rockBtn:hover {
+background-color: rgba(109, 70, 70, 0.5);
+}
+#paperBtn:hover {
+background-color: rgba(255, 255, 255, 0.5);
+}
+#scissorsBtn:hover {
+background-color: rgba(187, 35, 35, 0.5);
+}
+
+.player-wins {
+    color: rgb(0, 255, 0);
+}
+
+.computer-wins {
+    color: red;
+}
+
+.draw {
+    color: beige;
+}
+
+#heading2 {
+    width: auto; 
+    height: 50px;
+}
