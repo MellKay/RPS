@@ -1,18 +1,32 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <title>Rock, Paper, Scissors</title>
-    <link rel="stylesheet" type="text/css" href="rps.css"/>
-</head>
-<body>
+    <link rel="stylesheet" type="text/css" href="rps.css" />
+  </head>
+  <body>
     <!-- link to js -->
-    
-    <h1 id = "heading">Lets play Rock Paper Scissors! Best of 5</h1>
-    <h2 id = "heading2">Click a button!</h2>
-    <h2 id = "scoreboard"></h2>
-    <button id="rockBtn">Rock</button>
-    <button id="paperBtn">Paper</button>
-    <button id="scissorsBtn">Scissors</button>
-    <script src="RPS-v1.js"></script>
-</body>
+
+    <h1 id="heading">Lets play Rock Paper Scissors! Best of 5</h1>
+    <label class="itemToHide"
+      >Enter Your Name:
+      <input id="nameInput" class="itemToHide" type="text" />
+    </label>
+    <button class="itemToHide" id="submitUsername">Submit</button>
+
+    <!-- groups all the items that are first hidden together so they all get revealed at the same time -->
+    <div class="initiallyHiddenItem">
+      <h2 id="heading2">Click a button!</h2>
+      <h2 id="scoreboard"></h2>
+      <button id="rockBtn">Rock</button>
+      <button id="paperBtn">Paper</button>
+      <button id="scissorsBtn">Scissors</button>
+      <!-- shows the game history -->
+      <section>
+        <h3>Game history:</h3>
+        <ul id="gameHistoryUL"></ul>
+      </section>
+    <!-- <button class="resetButton">Play Again??</button> -->
+    <script src="RPS-v1-5.js"></script>
+  </body>
 </html>

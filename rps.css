@@ -1,119 +1,154 @@
 body {
-    /* background-image: radial-gradient(rgb(156, 151, 151),rgb(63, 60, 60)); */
-    background-color:rgb(63, 60, 60) ;
-    height: 100vh;
-    color:white; 
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0 auto;
-    padding: 0;
-    text-align: center;
-    /* background: url("skull.png"); */
+  background-color: rgb(63, 60, 60);
+
+  height: 100vh;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
 }
 
 button {
-    border: none;
-    border-radius: 0;
-    width: 150px;
-    height: 50px;
-    margin: 0;
-    padding: 0;
+  border: none;
+  border-radius: 0;
+  width: 150px;
+  height: 50px;
+  margin: 0;
+  padding: 0;
+  transition: 0.5s background-color;
 }
 
 #scoreboard {
-    width: auto; 
-    height: 50px;
+  width: auto;
+  height: 50px;
 }
 
 #rockBtn {
-background-color: rgb(109, 70, 70);
+  background-color: rgb(109, 70, 70);
 }
 #paperBtn {
-background-color: rgb(255, 255, 255);
+  background-color: rgb(255, 255, 255);
 }
 #scissorsBtn {
-background-color: rgb(187, 35, 35);
+  background-color: rgb(187, 35, 35);
 }
 #rockBtn:hover {
-background-color: rgba(109, 70, 70, 0.5);
+  background-color: rgba(109, 70, 70, 0.5);
 }
 #paperBtn:hover {
-background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.5);
 }
 #scissorsBtn:hover {
-background-color: rgba(187, 35, 35, 0.5);
+  background-color: rgba(187, 35, 35, 0.5);
 }
 
 .player-wins {
-    color: rgb(0, 255, 0);
+  color: rgb(0, 255, 0);
 }
 
 .computer-wins {
-    color: red;
+  color: red;
 }
 
 .draw {
-    color: beige;
+  color: beige;
 }
 
 #heading2 {
-    width: auto; 
-    height: 50px;
+  width: auto;
+  height: 50px;
 }
 
 .lose-image {
-    animation: skull 1s infinite;
+  animation: skull 1s infinite;
 }
 
 @keyframes skull {
-    0% {
-        background-image: none;
-        background-position: center;
-    }
-    38% {
-        background-image: none;
-        background-position: center;
-    }
-    40% {
-        background-image: url("skull.png");
-        background-repeat: no-repeat;
-        background-size: 80vw 100vh;
-        background-position: center;
-    }
-    42% {
-        background-image: none;
-        background-position: center;
-    }
-    65% {
-        background-image: none;
-        background-position: center;
-    }
-    67% {
-        background-image: url("skull.png");
-        background-repeat: no-repeat;
-        background-size: 80vw 100vh;
-        background-position: center;
-    }
-    69% {
-        background-image: none;
-        background-position: center;
-    }
-    82% {
-        background-image: none;
-        background-position: center;
-    }
-    84% {
-        background-image: url("skull.png");
-        background-repeat: no-repeat;
-        background-size: 80vw 100vh;
-        background-position: center;
-    }
-    85% {
-        background-image: none;
-        background-position: center;
-    }
-    100%{
-        background-image: none;
-        background-position: center;
-    }
-    
+  0% {
+    background-image: none;
+    background-position: center;
+  }
+  38% {
+    background-image: none;
+    background-position: center;
+  }
+  40% {
+    background-image: url("skull.png");
+    background-repeat: no-repeat;
+    background-size: 80vw 100vh;
+    background-position: center;
+  }
+  42% {
+    background-image: none;
+    background-position: center;
+  }
+  65% {
+    background-image: none;
+    background-position: center;
+  }
+  67% {
+    background-image: url("skull.png");
+    background-repeat: no-repeat;
+    background-size: 80vw 100vh;
+    background-position: center;
+  }
+  69% {
+    background-image: none;
+    background-position: center;
+  }
+  82% {
+    background-image: none;
+    background-position: center;
+  }
+  84% {
+    background-image: url("skull.png");
+    background-repeat: no-repeat;
+    background-size: 80vw 100vh;
+    background-position: center;
+  }
+  85% {
+    background-image: none;
+    background-position: center;
+  }
+  100% {
+    background-image: none;
+    background-position: center;
+  }
 }
+
+h3 {
+  color: darkgrey;
+}
+
+ul {
+  list-style: none;
+  font-weight: 600;
+  color: darkgray;
+}
+
+label {
+  font-size: x-large;
+}
+
+input {
+  border: none;
+}
+
+#submitUsername {
+  width: 50px;
+  height: 18px;
+  border: none;
+}
+
+.hiddenItem {
+  display: none;
+}
+
+.initiallyHiddenItem {
+  display: none;
+}
+
+/* .resetButton {
+  display: none;
+} */
